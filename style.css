@@ -58,8 +58,18 @@
       margin-top:12px;
       height:40px;
       padding:20px;
+      text-decoration: none;
       white-space:nowrap;
       box-sizing: border-box;
+    }
+
+    .header-text-user a{
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .header-text-user a:hover{
+        color: #2c007ed8;
     }
 
     button.header-button-registration{

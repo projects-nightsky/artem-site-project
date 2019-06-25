@@ -14,14 +14,14 @@
      <div class="wrapper registration-conteiner">
          <div class="registration-block">
              <div class="registration-block-title">РЕГИСТРАЦИЯ</div>
-             <div class="registration-block-data">
+             <form action="index.html" class="registration-block-data">
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">Мы хотим знать ваше имя</div>
-                        <input  class="registration-block-field-input" placeholder="Имя"/>
+                        <input  class="registration-block-field-input" required placeholder="Имя"/>
                  </div>
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">И конечно же фамилию</div>
-                        <input  class="registration-block-field-input" placeholder="Фамилия"/>
+                        <input  class="registration-block-field-input" required placeholder="Фамилия"/>
                  </div>
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">Укажите ваш возраст</div>
@@ -37,17 +37,15 @@
                         </select>
                  </div>
                  <div class="registration-block-field">
-                        <div class="registration-block-field-name">Тут следует указать Логин</div>
-                        <input  class="registration-block-field-input" placeholder="Логин"/>
+                        <div class="registration-block-field-name">Тут следует указать Email</div>
+                        <input  class="registration-block-field-input" required type="email" placeholder="Логин"/>
                  </div>
                  <div class="registration-block-field">
-                        <div class="registration-block-field-name">И пароль для входа в систему :)</div>
-                        <input type="password"  class="registration-block-field-input"  placeholder="Пароль"/>
+                        <div class="registration-block-field-name">И пароль для входа в систему</div>
+                        <input type="password"  class="registration-block-field-input" required placeholder="Пароль"/>
                  </div>
-                 <form action="index.html">
-                     <button class="registration-block-button" href='registration.html'>ЗАРЕГИСТРИРОВАТЬСЯ</button>
-                 </form>
-             </div>
+              <button class="registration-block-button" href='registration.html'>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              </form>
          </div>
      </div>
  </body>

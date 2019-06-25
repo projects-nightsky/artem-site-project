@@ -272,7 +272,7 @@ option{
     position: absolute;
     width: 503px;
     height: 149px;
-    background: #ffffffde;
+    background: #ffffff;
     border: 1px solid #5700fa8e;
     border-radius: 5px;
     padding: 10px;
@@ -337,11 +337,11 @@ img.services-list-item-img{
     font-size: 14px;
     padding: 10px;
     padding-left: 20px;
-    width: calc(100% - 180px);
+    width: calc(100% - 240px);
 }
 
 .services-list-item-price{
-    width: 90px;
+    width: 150px;
     text-align: right;
     padding-bottom:0;
     margin-top: 32px;

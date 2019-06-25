@@ -103,6 +103,22 @@
 
 img.footer-logo{
     height: 100%;
+    float: left;
+}
+
+.footer-contact-data{
+    float: left;
+    font-size: 11px;
+}
+
+.footer-contact-data-address{
+    height: 40%;
+    padding: 8px 0 4px 8px;
+}
+
+.footer-contact-data-phone{
+    height: 40%;
+    padding: 4px 0 8px 8px;
 }
 
 body{

@@ -14,14 +14,14 @@
      <div class="wrapper registration-conteiner">
          <div class="registration-block">
              <div class="registration-block-title">РЕГИСТРАЦИЯ</div>
-             <form action="index.html" class="registration-block-data">
+             <form onsubmit="popup(event)" class="registration-block-data">
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">Мы хотим знать ваше имя</div>
-                        <input  class="registration-block-field-input" required placeholder="Имя"/>
+                        <input id="registration-block-field-input-1" class="registration-block-field-input" required placeholder="Имя"/>
                  </div>
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">И конечно же фамилию</div>
-                        <input  class="registration-block-field-input" required placeholder="Фамилия"/>
+                        <input  id="registration-block-field-input-2"  class="registration-block-field-input" required placeholder="Фамилия"/>
                  </div>
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">Укажите ваш возраст</div>
@@ -38,15 +38,34 @@
                  </div>
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">Тут следует указать Email</div>
-                        <input  class="registration-block-field-input" required type="email" placeholder="Логин"/>
+                        <input  class="registration-block-field-input"  id="registration-block-field-input-3"  required type="email" placeholder="Логин"/>
                  </div>
                  <div class="registration-block-field">
                         <div class="registration-block-field-name">И пароль для входа в систему</div>
-                        <input type="password"  class="registration-block-field-input" required placeholder="Пароль"/>
+                        <input type="password"  id="registration-block-field-input-4"  class="registration-block-field-input" required placeholder="Пароль"/>
                  </div>
-              <button class="registration-block-button" href='registration.html'>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              <button class="registration-block-button" >ЗАРЕГИСТРИРОВАТЬСЯ</button>
               </form>
          </div>
+
+         <div id="popup" class="registration-popup">
+                <div class="registration-popup-text">Поздравляю вы успешно зарегистрировались</div>
+                <a href="index.html"><button class="registration-block-button success-btn">ОК</button></a>
+         </div>
      </div>
+
+     <script>
+       function popup(event) {
+              if(
+                     document.getElementById('registration-block-field-input-1').value != "" &&
+                     document.getElementById('registration-block-field-input-2').value != "" &&
+                     document.getElementById('registration-block-field-input-3').value != "" &&
+                     document.getElementById('registration-block-field-input-4').value != "" 
+              ){
+                     event.preventDefault();
+                     document.getElementById('popup').style="display:block;"
+              }
+       }
+       </script>
  </body>
 </html>

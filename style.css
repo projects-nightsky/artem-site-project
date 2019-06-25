@@ -251,6 +251,32 @@ option{
     border: 2px solid #5700fa;  
 }
 
+.registration-popup{
+    display: none;
+    position: absolute;
+    width: 503px;
+    height: 149px;
+    background: #ffffffde;
+    border: 1px solid #5700fa8e;
+    border-radius: 5px;
+    padding: 10px;
+    right: 29%;
+    top: 23%;
+    text-align: center;
+}
+
+.registration-popup-text{
+    color: #2c007ed8;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.success-btn{
+    margin-left: 10px; 
+    margin-right: 10px; 
+    width: 50%;
+}
+
 /* ########################  servises  ############################### */
 
 .services-list{
